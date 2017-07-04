@@ -1,0 +1,50 @@
+
+$mobile: 420px;
+$tablet: 960px;
+@media (max-width: $mobile){
+	.logo{display: none}
+	.navchik{
+		flex-direction: row;
+		justify-content: center;
+	}
+	.header__content{
+		.text__small{
+			font-size:12px;
+			&:before, &:after{
+				display: none;
+			}
+		}
+		.text__large{
+			font-size: 30px;
+		}
+		.text__medium{
+			font-size: 14px;
+		}
+	}
+	.programs .block__description{
+		.block__main_text{
+			font-size: 35px;
+			margin-top: 40px;
+		}
+		.block__second_rext{font-size:13px}
+	}
+	.tab__wraper{
+		flex-direction: column;
+		.courses__description{
+			align-items: center;
+			margin: 0;
+		}	
+	}
+	.check__program #tab_1:checked~.content1 .bg__text__wrapper, .check__program #tab_2:checked~.content2 .bg__text__wrapper, .check__program #tab_3:checked~.content3 .bg__text__wrapper  {display: none;}
+	.about_this__course{
+		flex-direction: column;
+		align-items: center;
+	}
+	[class^='granola__']{display: none}
+	.send__value{
+		bottom: 35%;
+	}
+}
+@media (max-width: $tablet){
+	.granola__bg-img{display: none}
+}
